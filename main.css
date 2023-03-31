@@ -22,6 +22,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  
+font-size: 48px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .header {
@@ -243,7 +256,9 @@ body {
 }
 
 .video-button img {
-  filter: brightness(100%);
+  filter: brightness(100%);margin-left: -30px;
+margin-top: -30px;
+
 }
 
 .video-button-subtitle {
@@ -308,6 +323,74 @@ body {
 .experience {
   width: 263px;
 }
+
+/*    */
+
+.inner__top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text{
+letter-spacing: 0em;
+text-align: left;
+max-width: 570px;
+}
+
+.text__top{
+font-size: 20px;
+line-height: 32px;
+}
+
+.text__bottom{
+font-size: 16px;
+line-height: 26px;
+}
+
+.video-card{
+  display: flex;
+ 
+  max-width: 445px;
+  max-height: 22;
+  border-radius: 8px;
+  position: relative;
+  flex-grow: 0;
+  align-items: center;
+}
+.video-card_img{
+  align-items: center;
+}
+
+.video-card__img img{
+  max-width: 445px;
+  max-height: auto;
+  border-radius: 8px;
+  filter: brightness(80%);
+  
+  
+}
+
+.img__button{
+  position:absolute;
+  
+  
+  
+  /* margin-left: -30px;
+  margin-top: -30px; */
+}
+
+.video-card__button a{
+  text-decoration: none;
+  color: #fff;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+  
 
 footer {
   background-color: #f8f6f7;
