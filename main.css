@@ -195,55 +195,6 @@ h2 {
   transition: 0.3s transform;
 }
 
-/* .advantages {
-  margin-top: 101px;
-  width: 1110px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.advantages h3 {
-  margin: 20px 0 8px;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.advantages-subtitle {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.cont {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.office {
-  width: 296px;
-}
-
-.quality {
-  width: 255px;
-}
-
-.experience {
-  width: 263px;
-} */
-
-/*    */
-
 .inner__top {
   display: flex;
   justify-content: space-between;
