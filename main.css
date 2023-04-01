@@ -11,6 +11,7 @@ html {
 a {
   color: #278aff;
 }
+
 body {
   font-family: sans-serif;
   height: 100%;
@@ -33,6 +34,25 @@ h2 {
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.button-subscribe{
+  background: #fb9475;
+  padding: 17px 30px;
+  border: 0;
+  border-radius: 24px;
+  color: #fff;
+}
+
+.button-subscribe--s{
+  padding: 10px 20px;
+  border-radius: 17px;
 }
 
 .header {
@@ -137,18 +157,7 @@ h2 {
   margin-bottom: 59px;
 }
 
-.header-title button {
-  background: #fb9475;
-  width: 203px;
-  height: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 17px 30px;
-  border: 0;
-  border-radius: 24px;
-  color: #fff;
-}
+
 
 .girl {
   position: absolute;
@@ -263,12 +272,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-.advantages-card__title {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
 .advantages-card__subtitle {
   font-size: 14px;
   font-weight: 400;
@@ -276,10 +279,45 @@ h2 {
   text-align: center;
 }
 
+.services {
+  display: flex;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 30px;
+  max-width: 350px;
+  max-height: auto;
+}
+
+.service-card__img {
+  max-width: 350px;
+  max-height: 180px;
+  border-radius: 8px;
+  filter: brightness(80%);
+}
+
+.service-card__title{
+  margin: 20px 0 8px;
+}
+
+.service-card__subtitle{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
 footer {
   background-color: #f8f6f7;
   padding: 20px 0;
 }
+
 .footer {
   margin-top: auto;
   display: flex;
