@@ -42,7 +42,7 @@
 }
 
 .header {
-  background: url(../images/header-background.png);
+  background: url(./images/header-background.png);
   padding: 30px 0 0;
   height: auto;
   position: relative;
@@ -324,20 +324,38 @@
   column-gap: 30px;
   justify-content: start;
 
+  &__pic{
+    position: relative;
+  }
+
   &__img {
     max-width: 255px;
     max-height: auto;
     border-radius: 8px;
+   
+    &:hover{
+      filter: brightness(0.6);
+    }
   }
 
   &__subscribe {
     display: none;
   }
 
+
+
   &__link:hover + span {
-    filter: brightness(50%);
+    
     display: block;
     position: absolute;
+    top:45%;
+    left: 30%;
+   color: #fff;
+
+    .masters__img{
+      filter: brightness(110%);
+    }
+    
   }
 
   &__name {
