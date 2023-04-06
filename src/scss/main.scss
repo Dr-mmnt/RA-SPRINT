@@ -464,7 +464,7 @@ footer {
 } 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width: 480px) { 
-  .navigation__list{
+  .header__navigation .navigation__list{
     justify-content: center;
   }
 } 
