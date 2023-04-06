@@ -473,15 +473,30 @@ footer {
   .girl{
     display: none; 
   }
+
+  .header__navigation{
+    display: none;
+  }
   .header-hero__text{
     top: 0; 
     position: static;
+    text-align: center;
+  }
+
+  .header-hero__title{
+    font-size: 30px;
+    line-height: 25px;
+    
   }
   
-  .header-hero{
-    padding: 0;
+  .logo{
+    margin-bottom: 5px;
   }
-.header .container{
-  padding-bottom: 0px;
-}
+
+  .media--column{
+    display: none;
+  }
+  .container{
+    line-height: 20px;
+  }
 }
