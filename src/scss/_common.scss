@@ -1,70 +1,79 @@
 html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  a {
-    color: #278aff;
-  }
-  
-  body {
-    font-family: sans-serif;
-   
-    min-width: 320px;
-  }
-  
-  .page{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 1110px;
-    margin: auto;    
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    line-height: 29px;
-    
-  }
-   footer{
-    margin-top: auto;
-    background-color: #f8f6f7;
-    padding: 20px 0;
-   }
-   
-  h1 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 59px;
-    margin-bottom: 17px;
-  }
-  
-  h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 59px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  
-  h4 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    text-align: center;
-  }
-  
-  h5 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #278aff;
+}
+
+body {
+  font-family: sans-serif;
+  min-width: 320px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  row-gap: 100px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 29px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #f8f6f7;
+  padding: 20px 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 17px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 32px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+}

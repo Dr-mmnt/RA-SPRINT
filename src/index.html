@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   
-  <body>
+  <i>
     <div class="page">
       <header class="header">
         <div class="container">
 
           <div class="header__top">
-            <a class="logo" href="/">Мир красоты</a>
+            <a class="header__logo" href="/">Мир красоты</a>
 
             <nav class="navigation header__navigation">
               <ul class="navigation__list">
@@ -51,23 +51,24 @@
               <img class="girl__img" src="/images/girl.png" alt="girl" />
             </div>
 
-            <div class="media media--column">
+            <div class="media media_column">
                 <a class="media__link" href="#"><img class="media__img" src="/images/vk.png" alt="" /></a>
                 <a class="media__link" href="#"><img class="media__img" src="/images/insta.png" alt="" /></a>
                 <a class="media__link" href="#"><img class="media__img" src="/images/youtube.png" alt="" /></a>
             </div>
-
+          </div>
 
         </div>
-      </div>
-    </header>
+      
+      </header>
     
-       <main>
+       <main class="main">
+
           <section id="about" class="section">
             <div class="container">
               <div class="secion__header">
                 <h2 class="section__title">О салоне</h2>
-                <div class="section__inner">
+                <div class="section__inner section__inner_big-gap">
                   
                   <div class="inner__top">
                     
@@ -84,45 +85,54 @@
   
                     <div class="video-card">                     
                         <img class="video-card__img" src="../images/about.png" alt="Короткое видео о нас">
-                        <button class="video-card__btn video-card__btn--invisible"><img src="../images/play-icon.svg" alt=""><span class="video-card__info"><br>О салоне</span></button>                                   
+                        <button class="video-card__btn video-card__btn_invisible"><img src="../images/play-icon.svg" alt=""><span class="video-card__info"><br>О салоне</span></button>                                   
                     </div>
 
-                  </div>
-
-                  <div class="advantages">
-                    <div class="advantages-card">
-                      <img class="advantages-card__logo" src="../images/office.svg" alt="" class="adventages-card__img">
-
-                        <h4 class="advantages-card__title">Удобные кабинеты</h4>
-
-                        <div class="advantages-card__subtitle">
-                          Комфорт и стиль - принцип создания кабинетов салона красоты. Только эстетика и удобство для Вас
-                        </div>
-                      </div>
-                      
-                      <div class="advantages-card">
-                        <img class="advantages-card__logo" src="../images/quality.png" alt="" class="adventages-card__img">
-
-                        <h4 class="advantages-card__title">Качественная косметика</h4>
-
-                        <div class="advantages-card__subtitle">
-                          Используем профессиональные материалы высшего качества лучших брендов
-                        </div>
-                      </div>
-                      
-                      <div class="advantages-card">
-                        <img class="advantages-card__logo" src="../images/experience.png" alt="" class="adventages-card__img">
-
-                        <h4 class="advantages-card__title">Опытные мастера</h4>
-
-                        <div class="advantages-card__subtitle">
-                          Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе Мастера
-                        </div>
-                      </div>                                
-                    </div>
+                  </div>                 
               </div>
             </div>
+
+
           </section><!-- #about -->
+
+          <section id="advantages" class="section">
+            <div class="container">
+              <div class="advantages">
+
+                <div class="advantages-card">
+                  <img class="advantages-card__logo" src="../images/office.svg" alt="" class="adventages-card__img">
+            
+                    <h4 class="advantages-card__title">Удобные кабинеты</h4>
+            
+                    <div class="advantages-card__subtitle">
+                      Комфорт и стиль - принцип создания кабинетов салона красоты. Только эстетика и удобство для Вас
+                    </div>
+                </div>
+                  
+                  <div class="advantages-card">
+                    <img class="advantages-card__logo" src="../images/quality.png" alt="" class="adventages-card__img">
+            
+                    <h4 class="advantages-card__title">Качественная косметика</h4>
+            
+                    <div class="advantages-card__subtitle">
+                      Используем профессиональные материалы высшего качества лучших брендов
+                    </div>
+                  </div>
+                  
+                  <div class="advantages-card">
+                    <img class="advantages-card__logo" src="../images/experience.png" alt="" class="adventages-card__img">
+            
+                    <h4 class="advantages-card__title">Опытные мастера</h4>
+          
+                    <div class="advantages-card__subtitle">
+                      Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе Мастера
+                    </div>
+                  </div>  
+
+                </div>
+              </div>
+            
+          </section>
 
           <section id="popular-services" class="section">
             <div class="container">
@@ -140,7 +150,7 @@
                       <div class="service-card__subtitle">
                         Аппаратный, комбинированный или классический.
                       </div>
-                      <button class="button-subscribe button-subscribe--s">Записаться</button>
+                      <button class="button-subscribe button-subscribe_s">Записаться</button>
                     </div> 
                     
                     <div class="service-card">
@@ -151,7 +161,7 @@
                       <div class="service-card__subtitle">
                         Гель-лак наносится в несколько слоев с использование базы и топа. Каждый слой полимеризуется в LED-лампе.
                       </div>
-                      <button class="button-subscribe button-subscribe--s">Записаться</button>
+                      <button class="button-subscribe button-subscribe_s">Записаться</button>
                     </div> 
 
                     <div class="service-card">
@@ -162,7 +172,7 @@
                       <div class="service-card__subtitle">
                         Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.
                       </div>
-                      <button class="button-subscribe button-subscribe--s">Записаться</button>
+                      <button class="button-subscribe button-subscribe_s">Записаться</button>
                     </div> 
 
                     <div class="service-card">
@@ -173,7 +183,7 @@
                       <div class="service-card__subtitle">
                         Аппаратный, комбинированный или классический.
                       </div>
-                      <button class="button-subscribe button-subscribe--s">Записаться</button>
+                      <button class="button-subscribe button-subscribe_s">Записаться</button>
                     </div> 
 
                     <div class="service-card">
@@ -184,10 +194,10 @@
                       <div class="service-card__subtitle">
                         Благодаря этой процедуре увлажнение кожи увеличивается на 80%, также выводит токсины и укрепляет суставы.
                       </div>
-                      <button class="button-subscribe button-subscribe--s">Записаться</button>
+                      <button class="button-subscribe button-subscribe_s">Записаться</button>
                     </div> 
 
-                  </div>                  
+                  </div>                   
                 </div>
               </div>
             </div>
@@ -200,14 +210,14 @@
                 
                 <div class="section__inner">
                 
-                <nav class="navigation">
+                <nav class="navigation services-table__navigation">
                   <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Стрижка и укладка</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Косметология</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Маникюр и педикюр</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Макияж</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Брови и ресницы</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Массаж</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Стрижка и укладка</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Косметология</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Маникюр и педикюр</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Макияж</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Брови и ресницы</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link_active" href="#">Массаж</a></li>
                   </ul>
                 </nav>
 
@@ -357,23 +367,6 @@
             </div>
           </section><!-- masters -->
 
-          <section id="works" class="section">
-            <div class="container">
-              <div class="secion__header">
-                <h2 class="section__title">Наши работы</h2>
-                <div class="section__actions">
-                  <!-- Дополнительные элементы шапки секции -->
-                  <button>1</button>
-                  <button>2</button>
-                </div>
-
-                <div class="section__inner">
-                  <!-- КОентент секции -->
-                </div>
-              </div>
-            </div>
-          </section>
-
         </div>
       </main> 
       <footer>
@@ -385,16 +378,17 @@
             </div>
             <div class="navigation">
               <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link href="#sevices-table">Услуги и цены</a></li>
-                <li class="navigation__item"><a class="navigation__link href="#masters">Мастера</a></li>
-                <li class="navigation__item"><a class="navigation__link href="#works">Наши работы</a></li>
-                <li class="navigation__item"><a class="navigation__link href="#contacts">Контакты</a></li>
+                <li class="navigation__item"><a class="navigation__link href="#sevices-table>Услуги и цены</a></li>
+                <li class="navigation__item"><a class="navigation__link href="#masters>Мастера</a></li>
+                <li class="navigation__item"><a class="navigation__link href="#works>Наши работы</a></li>
+                <li class="navigation__item"><a class="navigation__link href="#contacts>Контакты</a></li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+    
     <script> src="./js/main.js" </script>
+  </div>
   </body>
 </html>
