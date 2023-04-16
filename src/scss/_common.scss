@@ -24,6 +24,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   row-gap: 100px;
+
+  &:last-child{
+    row-gap: 0;
+  }
 }
 
 .container {
@@ -34,8 +38,23 @@ body {
   font-weight: 400;
   letter-spacing: 0em;
   line-height: 29px;
+
+  &_horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
 }
 
+.seciton__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  &_with-button {
+    justify-content: space-between;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -44,7 +63,7 @@ main {
 
 footer {
   margin-top: auto;
-  background-color: #f8f6f7;
+  
   padding: 20px 0;
 }
 
@@ -61,7 +80,7 @@ h2 {
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 h4 {
@@ -69,11 +88,16 @@ h4 {
   font-weight: 600;
   line-height: 22px;
   text-align: center;
+  margin: 0;
 }
 
 h5 {
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
+  margin: 0;
+}
+
+p{
   margin: 0;
 }
