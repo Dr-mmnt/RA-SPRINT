@@ -289,8 +289,15 @@
   .container_horizontal {
     flex-direction: column-reverse;
   }
-}
 
+  footer .navigation__list{
+    justify-content: center;
+    gap: 0 100px;
+    .navigation__item{
+      margin: 0;
+    }
+}
+}
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .header {
@@ -363,8 +370,6 @@
 footer .navigation__list{
   justify-content: center;
   gap: 0 50px;
-  .navigation__item{
-    margin: 0;
-  }
+  
 }
 }
