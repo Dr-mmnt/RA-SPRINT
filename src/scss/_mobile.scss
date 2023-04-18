@@ -2,9 +2,20 @@
 @media only screen and (max-width: 1280px) {
   .container {
     padding: 0 30px;
+    &_horizontal {
+      padding: 40px 30px;
+    }
   }
   .advantages {
     column-gap: 10px;
+  }
+  .service {
+    justify-content: center;
+  }
+
+  .masters {
+    column-gap: 200px;
+    justify-content: center;
   }
 }
 
@@ -14,6 +25,10 @@
     position: absolute;
     right: 50px;
     top: 30px;
+
+    &_horizontal {
+      position: static;
+    }
   }
 
   .girl {
@@ -78,12 +93,47 @@
   }
 
   .masters {
+    column-gap: 100px;
     justify-content: center;
+  }
+
+  .work-carousel__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .brands__list {
+    column-gap: 10px;
+    &_img {
+      scale: 0.6;
+    }
+  }
+  .container_horizontal {
+    column-gap: 50px;
+  }
+
+  .phone-info__address {
+    font-size: 14px;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  main {
+    row-gap: 20px;
+  }
+
+  .section__header {
+    row-gap: 0;
+  }
   .header__top {
     flex-direction: column;
     align-items: center;
@@ -102,6 +152,75 @@
 
   #about .inner__top {
     flex-direction: column;
+    .text {
+      &__top {
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      &__bottom {
+        margin: 16px 0;
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+
+    &-card {
+      margin-bottom: 0;
+
+      &__title {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .service {
+    row-gap: 5px;
+  }
+
+  #services-table .section__inner {
+    row-gap: 20px;
+    .navigation__list {
+      justify-content: space-between;
+      gap: 5px 70px;
+      .navigation__item {
+        margin: 0;
+      }
+    }
+  }
+
+  .brands__list {
+    max-width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .phone-info {
+    font-size: smaller;
+    text-align: left;
+
+    &__mail {
+      font-size: 15px;
+      align-items: center;
+    }
+  }
+  .media-block {
+    font-size: smaller;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    &_privacy-policy {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+    }
   }
 }
 
@@ -110,11 +229,75 @@
   .header__navigation .navigation__list {
     justify-content: center;
   }
+
+  .inner__top {
+    align-items: center;
+  }
+
+  .video-card__img {
+    max-width: 280px;
+  }
+
+  .section__inner-gap {
+    max-width: 1110px;
+    margin: auto;
+  }
+
+  .paginator {
+    display: none;
+  }
+
+  .work-carousel {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    &__img {
+      max-width: 140px;
+      max-height: 140px;
+    }
+  }
+
+  .section__header_padding {
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 11px;
+  }
+
+  .services-table {
+    &__navigation {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      column-gap: 20px;
+      justify-content: center;
+    }
+    &__price {
+      font-size: 13px;
+    }
+
+    &__subtitle {
+      font-size: 11px;
+    }
+  }
+
+  .brands {
+    row-gap: 10px;
+  }
+  .container_horizontal {
+    flex-direction: column-reverse;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .header {
+&__top{
+  row-gap: 10px;
+}
+
     &__navigation {
       display: none;
     }
@@ -128,7 +311,11 @@
 
       &__title {
         font-size: 30px;
-        line-height: 25px;
+        line-height: 30px;
+      }
+
+      &__subtitle{
+        margin-bottom: 10px;
       }
     }
   }
@@ -146,4 +333,38 @@
   .container {
     line-height: 20px;
   }
+
+  .service {
+    row-gap: 0;
+  }
+
+  .service-card__img {
+    display: none;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #services-table .section__inner .navigation__list {
+    justify-content: center;
+    column-gap: 5px;
+  }
+
+  .services-table{
+    &__subtitle{
+      margin: 0;
+    }
+    &__item{
+    justify-content: space-between;
+  }
+}
+
+footer .navigation__list{
+  justify-content: center;
+  gap: 0 50px;
+  .navigation__item{
+    margin: 0;
+  }
+}
 }

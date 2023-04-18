@@ -23,11 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  row-gap: 100px;
-
-  &:last-child{
-    row-gap: 0;
-  }
 }
 
 .container {
@@ -39,31 +34,54 @@ body {
   letter-spacing: 0em;
   line-height: 29px;
 
-  &_horizontal {
+  &_horizontal{
     display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-  }
-}
-
-.seciton__header {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-
-  &_with-button {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
+
+.section {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    &__inner-gap {
+      row-gap: 100px;
+    }
+  }
+
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &_padding{
+      padding: 80px 0
+    }
+    &_smallPadding{
+      padding: 40px 0
+    }
+    
+
+    
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
   row-gap: 100px;
+
+  &::before{
+   content: "";
+  }
 }
 
 footer {
   margin-top: auto;
-  
+
   padding: 20px 0;
 }
 
@@ -77,7 +95,7 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 59px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
@@ -98,6 +116,6 @@ h5 {
   margin: 0;
 }
 
-p{
+p {
   margin: 0;
 }
