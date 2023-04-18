@@ -1,4 +1,4 @@
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById("contact-form");
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -10,8 +10,6 @@ function handleSubmit(event) {
   this.reset();
 }
 
-contactForm.addEventListener('submit', handleSubmit);
-contactForm.removeEventListener('submit', handleSubmit);
+contactForm.addEventListener("submit", handleSubmit);
 
 console.log(contactForm);
-// newElement.classList.add('new-el', 'actve', 'newClass');

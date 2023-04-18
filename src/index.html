@@ -475,26 +475,32 @@
       <!-- masters -->
 
       <section id="works" class="section">
-        <div class="container ">
+        <div class="container">
           <div class="section__header">
-            <div class="titleWithButton ">
+            <div class="titleWithButton">
               <h2 class="section__title">Наши работы</h2>
               <div class="paginator">
                 <button class="paginator__button">
-                  <img class="paginator__left" src="./images/arrow.svg" alt="" />
+                  <img
+                    class="paginator__left"
+                    src="./images/arrow.svg"
+                    alt=""
+                  />
                 </button>
                 <button class="paginator__button">
-                  <img class="paginator__right" src="./images/arrow.svg" alt="" />
+                  <img
+                    class="paginator__right"
+                    src="./images/arrow.svg"
+                    alt=""
+                  />
                 </button>
               </div>
             </div>
           </div>
-        </div>
-
 
           <div class="section__inner section__inner-gap">
             <div class="work-carousel">
-              <div class="work-carousel__item">
+              <a class="work-carousel__item" href="">
                 <img
                   class="work-carousel__img"
                   src="./images/work_1.png"
@@ -508,9 +514,9 @@
                   />
                   <span class="work-carousel__zoom-text">Увеличить</span>
                 </div>
-              </div>
+              </a>
 
-              <div class="work-carousel__item">
+              <a class="work-carousel__item" href="">
                 <img
                   class="work-carousel__img"
                   src="./images/work_2.png"
@@ -524,9 +530,9 @@
                   />
                   <span class="work-carousel__zoom-text">Увеличить</span>
                 </div>
-              </div>
+              </a>
 
-              <div class="work-carousel__item">
+              <a class="work-carousel__item" href="">
                 <img
                   class="work-carousel__img"
                   src="./images/work_3.png"
@@ -540,9 +546,9 @@
                   />
                   <span class="work-carousel__zoom-text">Увеличить</span>
                 </div>
-              </div>
+              </a>
 
-              <div class="work-carousel__item">
+              <a class="work-carousel__item" href="">
                 <img
                   class="work-carousel__img"
                   src="./images/work_4.png"
@@ -556,7 +562,7 @@
                   />
                   <span class="work-carousel__zoom-text">Увеличить</span>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="brands container">
@@ -607,7 +613,9 @@
       <!-- works -->
 
       <section id="contacts" class="section">
-        <div class="container   container_horizontal section__header_smallPadding">
+        <div
+          class="container container_horizontal section__header_smallPadding"
+        >
           <div class="contacts__info">
             <h2 class="section-title">Контакты</h2>
 
@@ -650,32 +658,28 @@
               </div>
 
               <form id="contact-form">
-                <label>
-                  <input
-                    type="text"
-                    placeholder="Ваше имя"
-                    name="name"
-                    required
-                  />
-                </label>
-  
-                <label>
-                  <input
-                    type="text"
-                    placeholder="+7 (___) ___-__-__"
-                    name="phone"
-                    required
-                  />
-                </label>
-  
+                <input
+                  type="text"
+                  placeholder="Ваше имя"
+                  name="name"
+                  required
+                />
+
+                <input
+                  type="text"
+                  placeholder="+7 (___) ___-__-__"
+                  name="phone"
+                  required
+                />
+
                 <button class="button-subscribe">Записаться</button>
               </form>
-              
+
               <div class="contacts__form_privacy-policy">
                 <p class="privacy-policy">
                   Нажимая на кнопку вы соглашаетесь с
                   <a href="">обработкой персональных данных</a>
-                </p>                
+                </p>
               </div>
             </div>
           </div>

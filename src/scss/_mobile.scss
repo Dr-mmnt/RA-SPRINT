@@ -290,20 +290,20 @@
     flex-direction: column-reverse;
   }
 
-  footer .navigation__list{
+  footer .navigation__list {
     justify-content: center;
     gap: 0 100px;
-    .navigation__item{
+    .navigation__item {
       margin: 0;
     }
-}
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .header {
-&__top{
-  row-gap: 10px;
-}
+    &__top {
+      row-gap: 10px;
+    }
 
     &__navigation {
       display: none;
@@ -321,7 +321,7 @@
         line-height: 30px;
       }
 
-      &__subtitle{
+      &__subtitle {
         margin-bottom: 10px;
       }
     }
@@ -358,18 +358,17 @@
     column-gap: 5px;
   }
 
-  .services-table{
-    &__subtitle{
+  .services-table {
+    &__subtitle {
       margin: 0;
     }
-    &__item{
-    justify-content: space-between;
+    &__item {
+      justify-content: space-between;
+    }
   }
-}
 
-footer .navigation__list{
-  justify-content: center;
-  gap: 0 50px;
-  
-}
+  footer .navigation__list {
+    justify-content: center;
+    gap: 0 50px;
+  }
 }
