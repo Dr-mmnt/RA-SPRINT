@@ -4,8 +4,8 @@
   "description": "Мусин Сергей",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development && gulp",
-    "build": "cross-env NODE_ENV=production && gulp build"
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "author": "",
   "license": "ISC",
@@ -16,9 +16,9 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
+    "@babel/core": "^7.21.8",
     "@babel/plugin-transform-runtime": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "browser-sync": "^2.29.1",
