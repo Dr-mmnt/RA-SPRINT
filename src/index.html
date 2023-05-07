@@ -16,7 +16,15 @@
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <title>Мир красоты</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -142,8 +150,6 @@
     <main class="main">
       <section id="about" class="section">
         <div class="container">
-         
-
           <div class="section__header">
             <h2 class="section__title">О салоне</h2>
             <div class="section__inner section__inner_big-gap">
@@ -997,181 +1003,98 @@
           <div class="section__header">
             <div class="titleWithButton">
               <h2 class="section__title">Наши работы</h2>
+
               <div class="paginator">
-                <button class="paginator__button">
+                <button class="paginator__button paginator__button_left">
                   <img
                     class="paginator__left"
-                    src="./images/arrow.svg"
+                    src="./images/arrowLeft.svg"
                     alt=""
                   />
                 </button>
-                <button class="paginator__button">
+                <button class="paginator__button paginator__button_right">
                   <img
                     class="paginator__right"
-                    src="./images/arrow.svg"
+                    src="./images/arrowLeft.svg"
                     alt=""
                   />
                 </button>
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
-          <div class="section__inner section__inner-gap">
+        <div class="section__inner section__inner-gap">
           <div class="container-wider">
             <div class="slider">
-              <div class="portfolio-item slider__item" style="background-image: url(./images/work_1.png);"></div>
-              <div class="portfolio-item slider__item" style="background-image: url(./images/work_2.png);"></div>
-              <div class="portfolio-item slider__item" style="background-image: url(./images/work_3.png);"></div>
-              <div class="portfolio-item slider__item" style="background-image: url(./images/work_4.png);"></div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_1.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_1.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_2.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_2.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_3.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_3.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_4.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_4.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_5.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_5.png"
+                /></a>
+              </div>
             </div>
           </div>
-
-
-
-
-
-            <div class="work-carousel">
-
-
-              <!-- <section class="slider">
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=1" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=2" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=3" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=4" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=5" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=6" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=7" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=8" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=9" />
-                </div>
-                <div class="slider__item">
-                  <img src="http://placehold.it/350x100?text=10" />
-                </div>
-              </section> -->
-            <!-- <div class="work-carousel">
-              <a class="work-carousel__item" href="">
+<!-- Если делаю зацикленный слайдер, то в fancybox появляется куча дублированных
+   слайдов. Если не зацикливаю - последний слайд не видно из-за overflow. Как сделать?-->
+          <div class="brands container">
+            <span class="brands__title"
+              >Бренды, которые мы используем в работе</span
+            >
+            <div class="brands__list">
+              <div class="brands__list_item">
                 <img
-                  class="work-carousel__img"
-                  src="./images/work_1.png"
-                  alt="макияж"
+                  class="brands__list_img"
+                  src="./images/wella.png"
+                  alt="wella"
                 />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
+              </div>
+              <div class="brands__list_item">
                 <img
-                  class="work-carousel__img"
-                  src="./images/work_2.png"
-                  alt="укладка"
+                  class="brands__list_img"
+                  src="./images/schwarzkopf.png"
+                  alt="schwarzkopf"
                 />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
+              </div>
+              <div class="brands__list_item">
                 <img
-                  class="work-carousel__img"
-                  src="./images/work_3.png"
-                  alt="маникюр"
+                  class="brands__list_img"
+                  src="./images/tigi.png"
+                  alt="tigi"
                 />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
+              </div>
+              <div class="brands__list_item">
                 <img
-                  class="work-carousel__img"
-                  src="./images/work_4.png"
-                  alt="стрижка"
+                  class="brands__list_img"
+                  src="./images/londa.png"
+                  alt="londa"
                 />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-            </div> -->
-
-            <div class="brands container">
-              <span class="brands__title"
-                >Бренды, которые мы используем в работе</span
-              >
-              <div class="brands__list">
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/wella.png"
-                    alt="wella"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/schwarzkopf.png"
-                    alt="schwarzkopf"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/tigi.png"
-                    alt="tigi"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/londa.png"
-                    alt="londa"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/nioxin.png"
-                    alt="nioxin"
-                  />
-                </div>
+              </div>
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/nioxin.png"
+                  alt="nioxin"
+                />
               </div>
             </div>
           </div>
@@ -1289,8 +1212,16 @@
     ></script>
     <script
       type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
       src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    
+
     <script src="./js/dom.js"></script>
     <script src="./js/index.js"></script>
   </body>
