@@ -23,6 +23,52 @@
     background: darken($button-subscribe, 10%);
   }
 }
+.mobileMenu {
+  .mobileOpenBtn {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 50px;
+    top: 50px;
+    cursor: pointer;
+  }
+  .mobile-menu {
+    background-color: lightgray;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    transition: 0.15s;
+    transform: translateX(-100%);
+    z-index: 3;
+
+    .mobileNavigation__list {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin-left: 50px;
+      list-style: none;
+      line-height: 17.07px;
+      padding: 0;
+      row-gap: 20px;
+    }
+
+    .mobileCloseBtn {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      left: 175px;
+      top: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-menu.visible {
+    transform: translateX(0);
+  }
+}
 
 .header {
   background: url(../images/header-background.png);
@@ -72,7 +118,7 @@
       color: $navigation;
     }
 
-    &_active:active {
+    &:active {
       text-decoration: underline;
     }
   }
@@ -284,10 +330,27 @@
   }
 }
 
+.tabs {
+  &__links {
+    .active {
+      color: $navigation;
+      text-decoration: underline;
+    }
+  }
+
+  &__item {
+    display: none;
+
+    &.active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
 .services-table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: none;
 
   &__item {
     display: flex;
@@ -388,7 +451,69 @@
   justify-content: space-between;
 }
 
+.container-wider {
+  max-width: 1340px;
+  overflow: hidden;
+  margin: 50px auto 108px auto;
+}
+
+.portfolio-item {
+  margin: 10px;
+  position: relative;
+  width: 338px;
+
+  &_photo {
+    border-radius: 8px;
+    width: 338px;
+    height: 338px;
+    object-fit: cover;
+  }
+
+  &:hover {
+    img{
+    scale: 1.05;
+    cursor: pointer;
+    filter: brightness(0.6);
+    }
+  }
+
+  &:hover:after {
+    position: absolute;
+    content: "Увеличить";
+    padding-top: 50px;
+    background-image: url(../images/zoom.svg);
+    color: #fff;
+    background-repeat: no-repeat;
+    left: 45%;
+    top: 40%;
+    user-select: none;
+  }
+}
+
+.slick {
+  position: relative;
+  padding: auto;
+  
+
+  &-list {
+    overflow: hidden;
+    
+  }
+
+  &-track {
+    display: flex;
+    column-gap: 29px;
+
+  }
+
+  &-item{
+    width: 338px;
+  
+  }
+}
+
 .paginator {
+  width: 200px;
   &__button {
     position: relative;
     border-color: transparent;
@@ -408,57 +533,6 @@
   }
   &__right {
     transform: scale(-1, 1);
-  }
-}
-
-.work-carousel {
-  display: flex;
-  overflow: hidden;
-  column-gap: 29px;
-  padding: 20px 0;
-
-  &__item {
-    position: relative;
-    cursor: pointer;
-
-    &:hover {
-      .work-carousel__zoom {
-        display: flex;
-        flex-direction: column;
-        visibility: visible;
-        color: #fff;
-      }
-      .work-carousel__img {
-        scale: 1.05;
-        border-radius: 8px;
-        filter: brightness(0.6);
-      }
-    }
-  }
-
-  &__img {
-    width: 338px;
-    height: 338px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  &__zoom {
-    visibility: hidden;
-    position: absolute;
-    align-items: center;
-    top: 35%;
-    left: 40%;
-    cursor: pointer;
-
-    &-text {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 17px;
-    }
-    &-img {
-      max-width: 48px;
-    }
   }
 }
 

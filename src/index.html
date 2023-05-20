@@ -10,6 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <title>Мир красоты</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -18,7 +33,7 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <a class="header__logo" href="/">Мир красоты</a>
+          <a class="header__logo" id="up" href="/">Мир красоты</a>
 
           <nav class="navigation header__navigation">
             <ul class="navigation__list">
@@ -49,6 +64,60 @@
             <time class="phone-info__time"
               ><br />с 10.00 до 19.00 без выходных</time
             >
+          </div>
+        </div>
+
+        <div class="mobileMenu">
+          <img
+            class="mobileOpenBtn"
+            src="./images/hamburgerOpen.png"
+            id="btn"
+            alt=""
+          />
+
+          <div id="mobileMenu" class="mobile-menu">
+            <ul class="mobileNavigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#up">Главная</a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#masters"
+                  >Мастера</a
+                >
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#services-table"
+                  >Услуги и цены</a
+                >
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#works"
+                  >Наши работы</a
+                >
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#about"
+                  >О нас</a
+                >
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link smooth-scroll" href="#contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+
+            <img
+              class="mobileCloseBtn"
+              id="mobileCloseBtn"
+              src="./images/hamburgerClose.png"
+              alt=""
+            />
           </div>
         </div>
 
@@ -281,107 +350,562 @@
           <div class="section__header">
             <h2 class="section__title">Услуги и цены</h2>
 
-            <div class="section__inner">
+            <div class="section__inner tabs" id="myTabs">
               <nav class="navigation services-table__navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Стрижка и укладка</a
-                    >
+                <ul class="navigation__list tabs__links">
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Стрижка и укладка
                   </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Косметология</a
-                    >
+
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Косметология
                   </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Маникюр и педикюр</a
-                    >
+
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Маникюр и педикюр
                   </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Макияж</a
-                    >
+
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Макияж
                   </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Брови и ресницы</a
-                    >
+
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Брови и ресницы
                   </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active" href="#"
-                      >Массаж</a
-                    >
+
+                  <li
+                    class="navigation__item navigation__link navigation__link_active"
+                  >
+                    Массаж
                   </li>
                 </ul>
               </nav>
 
-              <div class="services-table">
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Женская стрижка</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+              <div class="tabs_content">
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Женская стрижка</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Мужская стрижка</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Детский Стиль</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Креативный Стиль</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Стрижка бороды и усов
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс укладка</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Укладка дневная</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Прическа вечерняя (свадебная)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Мужская стрижка</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Женская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Мужская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Детская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Креативная косметика
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Косметика бороды и усов
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Дневная косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Косметика вечерняя (свадебная)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Детский Стиль</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Маникюр женский</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Маникюр мужской</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Маникюр детский</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Креативная педикюр</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Маникюр и педикюр</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс маникюр</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Педикюр женский</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Педикюр вечерний (свадебнаый)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Креативный Стиль</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Макияж мужской</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">женский Макияж</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Детская Макияж</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Креативная Макияж</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Макияж бороды и усов
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс Макияж</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Дневная Макияж</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Макияж вечерняя (свадебная)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Стрижка бороды и усов</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Женская брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Мужская брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Детская брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Креативная брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">брови бороды и усов</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Дневная брови</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        брови вечерняя (свадебная)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Экспресс укладка</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                <div class="services-table tabs__item">
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Женская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
-                </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">Укладка дневная</h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Мужская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">1200 ₽</span>
-                </div>
 
-                <div class="services-table__item">
-                  <div class="services-table__name">
-                    <h5 class="services-table__title">
-                      Прическа вечерняя (свадебная)
-                    </h5>
-                    <div class="services-table__subtitle">Короткие волосы</div>
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Детская косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
                   </div>
-                  <span class="services-table__price">3000 ₽</span>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Креативная косметика
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Косметика бороды и усов
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Экспресс косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">Дневная косметика</h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">1200 ₽</span>
+                  </div>
+
+                  <div class="services-table__item">
+                    <div class="services-table__name">
+                      <h5 class="services-table__title">
+                        Косметика вечерняя (свадебная)
+                      </h5>
+                      <div class="services-table__subtitle">
+                        Короткие волосы
+                      </div>
+                    </div>
+                    <span class="services-table__price">3000 ₽</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -479,132 +1003,98 @@
           <div class="section__header">
             <div class="titleWithButton">
               <h2 class="section__title">Наши работы</h2>
+
               <div class="paginator">
-                <button class="paginator__button">
+                <button class="paginator__button paginator__button_left">
                   <img
                     class="paginator__left"
-                    src="./images/arrow.svg"
+                    src="./images/arrowLeft.svg"
                     alt=""
                   />
                 </button>
-                <button class="paginator__button">
+                <button class="paginator__button paginator__button_right">
                   <img
                     class="paginator__right"
-                    src="./images/arrow.svg"
+                    src="./images/arrowLeft.svg"
                     alt=""
                   />
                 </button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="section__inner section__inner-gap">
-            <div class="work-carousel">
-              <a class="work-carousel__item" href="">
-                <img
-                  class="work-carousel__img"
-                  src="./images/work_1.png"
-                  alt="макияж"
-                />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
-                <img
-                  class="work-carousel__img"
-                  src="./images/work_2.png"
-                  alt="укладка"
-                />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
-                <img
-                  class="work-carousel__img"
-                  src="./images/work_3.png"
-                  alt="маникюр"
-                />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
-
-              <a class="work-carousel__item" href="">
-                <img
-                  class="work-carousel__img"
-                  src="./images/work_4.png"
-                  alt="стрижка"
-                />
-                <div class="work-carousel__zoom">
-                  <img
-                    class="work-carousel__zoom-img"
-                    src="./images/zoom.svg"
-                    alt=""
-                  />
-                  <span class="work-carousel__zoom-text">Увеличить</span>
-                </div>
-              </a>
+        <div class="section__inner section__inner-gap">
+          <div class="container-wider">
+            <div class="slider">
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_1.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_1.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_2.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_2.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_3.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_3.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_4.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_4.png"
+                /></a>
+              </div>
+              <div class="portfolio-item slider__item">
+                <a href="./images/work_5.png" data-fancybox="gallery"
+                  ><img class="portfolio-item_photo" src="./images/work_5.png"
+                /></a>
+              </div>
             </div>
-
-            <div class="brands container">
-              <span class="brands__title"
-                >Бренды, которые мы используем в работе</span
-              >
-              <div class="brands__list">
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/wella.png"
-                    alt="wella"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/schwarzkopf.png"
-                    alt="schwarzkopf"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/tigi.png"
-                    alt="tigi"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/londa.png"
-                    alt="londa"
-                  />
-                </div>
-                <div class="brands__list_item">
-                  <img
-                    class="brands__list_img"
-                    src="./images/nioxin.png"
-                    alt="nioxin"
-                  />
-                </div>
+          </div>
+          <!-- Если делаю зацикленный слайдер, то в fancybox появляется куча дублированных
+   слайдов. Если не зацикливаю - последний слайд не видно из-за overflow. Как сделать?-->
+          <div class="brands container">
+            <span class="brands__title"
+              >Бренды, которые мы используем в работе</span
+            >
+            <div class="brands__list">
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/wella.png"
+                  alt="wella"
+                />
+              </div>
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/schwarzkopf.png"
+                  alt="schwarzkopf"
+                />
+              </div>
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/tigi.png"
+                  alt="tigi"
+                />
+              </div>
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/londa.png"
+                  alt="londa"
+                />
+              </div>
+              <div class="brands__list_item">
+                <img
+                  class="brands__list_img"
+                  src="./images/nioxin.png"
+                  alt="nioxin"
+                />
               </div>
             </div>
           </div>
@@ -715,6 +1205,21 @@
       </div>
     </footer>
 
-    <script src="./js/dom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="./js/bundle.min.js"></script>
   </body>
 </html>
